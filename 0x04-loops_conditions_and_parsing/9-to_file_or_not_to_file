@@ -2,14 +2,14 @@
 # displays information about the school file.
 
 i="school"
-if [ -e $i ]; then
+if [ -e "$i" ]; then
 echo "school file exists"
-if [ -s $i ]; then
+if [ -s "$i" ]; then
 echo "school file is not empty"
 else
 echo "school file is empty"
 fi
-if [ -f $i];
+if [ -f "$i" ]; then
 echo "school is a regular file"
 fi
 else
