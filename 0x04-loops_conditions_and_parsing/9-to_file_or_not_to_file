@@ -6,10 +6,11 @@ if [ -e $i ]; then
 echo "school file exists"
 if [ -s $i ]; then
 echo "school file is not empty"
-elif [ -f $i];
-echo "school is a regular file"
 else
 echo "school file is empty"
+fi
+if [ -f $i];
+echo "school is a regular file"
 fi
 else
 echo "school file does not exist"
