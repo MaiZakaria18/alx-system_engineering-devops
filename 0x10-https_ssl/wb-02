@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# Bash script that uses ssh to connect to your server using the private
-ssh ubuntu@54.145.80.76 -i ~/.ssh/id_rsa
