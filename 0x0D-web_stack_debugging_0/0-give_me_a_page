@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# fixes an apache server in a container
-sudo service apache start
+# Run Apache on the Docker container.
+echo "ServerName localhost" >> /etc/apache2.conf
+service apache2 start
