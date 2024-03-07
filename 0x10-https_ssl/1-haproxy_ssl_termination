@@ -41,11 +41,11 @@ frontend getelias-frontend
         default_backend getelias-backend
 
 frontend getelias-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/getelias.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.getelias.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend getelias-backend
 
-backend clickviral-backend
+backend geteliasY-backend
         balance roundrobin
         server 504495-web-01 54.237.37.1:80 check
         server 504495-web-02 54.145.80.76:80 check
